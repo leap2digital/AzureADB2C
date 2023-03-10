@@ -1,5 +1,5 @@
 {
-    "name": "socialiteproviders/azureadb2c",
+    "name": "leap2digital/azureadb2c",
     "description": "AzureADB2C OAuth2 Provider for Laravel Socialite",
     "license": "MIT",
     "keywords": [
