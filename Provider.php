@@ -11,7 +11,6 @@ use Illuminate\Support\Str;
 use Laravel\Socialite\Two\InvalidStateException;
 use SocialiteProviders\Manager\OAuth2\AbstractProvider;
 use SocialiteProviders\Manager\OAuth2\User;
-use Illuminate\Support\Facades\Log;
 
 class Provider extends AbstractProvider
 {
@@ -198,7 +197,6 @@ class Provider extends AbstractProvider
      */
     protected function mapUserToObject(array $user)
     {
-        Log::error($user);
         return (new User())->setRaw($user)->map([
             'id'   => $user['sub'],
             'name'   => $user['name'],
